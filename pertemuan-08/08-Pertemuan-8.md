@@ -228,27 +228,27 @@ Setiap kelompok mempresentasikan mini project selama **10 menit** dengan susunan
 
 ```mermaid
 sequenceDiagram
-    P as Presenter
-    S as Server (npm start)
-    C as curl / Postman
-    D as SQLite
+    participant P as Presenter
+    participant S as Server
+    participant C as curl atau Postman
+    participant D as SQLite
 
     P->>S: npm start
     S-->>P: API berjalan di http://localhost:3008
-    P->>C: POST /<resource> (data valid)
+    P->>C: POST /buku (data valid)
     C->>S: request
     S->>D: INSERT
     D-->>S: id baru
     S-->>C: 201 + JSON
-    P->>C: GET /<resource>
+    P->>C: GET /buku
     C->>S: request
     S->>D: SELECT
     D-->>S: data
     S-->>C: 200 + JSON
-    P->>C: POST /<resource> (data tidak valid)
+    P->>C: POST /buku (data tidak valid)
     C->>S: request
     S-->>C: 400 + daftar error
-    P->>C: DELETE /<resource>/1
+    P->>C: DELETE /buku/1
     C->>S: request
     S->>D: DELETE
     S-->>C: 204

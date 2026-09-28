@@ -333,12 +333,12 @@ Rework yang dilakukan dalam praktikum:
 
 ```mermaid
 sequenceDiagram
-    C as Client
-    R as buku.routes.ts
-    K as buku.controller.ts
-    S as buku.service.ts
-    P as Prisma
-    D as SQLite
+    participant C as Client
+    participant R as buku.routes.ts
+    participant K as buku.controller.ts
+    participant S as buku.service.ts
+    participant P as Prisma
+    participant D as SQLite
 
     C->>R: POST /buku
     R->>K: handlerCreateBuku(req, res)
