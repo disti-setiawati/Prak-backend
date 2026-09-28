@@ -12,7 +12,7 @@
  *   yang sudah ditetapkan sejak Pertemuan 5 (lihat code/pertemuan-05).
  *
  * Jalankan:
- *   Lihat server.ts — file ini diekspor dan dirangkai oleh app.ts.
+ *   Lihat server.ts — file ini diekspor dan disusun oleh app.ts.
  */
 
 import type { Request, Response } from "express";

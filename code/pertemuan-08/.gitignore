@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+
+# Database (dev SQLite)
+prisma/dev.db
+
+# Generated Prisma client
+prisma/generated/

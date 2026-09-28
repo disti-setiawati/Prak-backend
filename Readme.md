@@ -24,6 +24,8 @@
 | 13 | Kode praktikum Pertemuan 6 — [`code/pertemuan-06/`](./code/pertemuan-06/) | `package.json`, `prisma/schema.prisma`, `client.ts`, `app.ts`, `server.ts`, `latihan.ts`, dan `.env.example` — API database dengan Prisma ORM 7 (TypeScript) |
 | 14 | [Pertemuan 7 — `pertemuan-07/07-Pertemuan-7.md`](./pertemuan-07/07-Pertemuan-7.md) | CRUD REST API — pola service/controller, pengelompokan endpoint dengan `express.Router()`, penguatan validasi input, integrasi Express.js dengan database, CBL, kuis, dan Tugas 5 |
 | 15 | Kode praktikum Pertemuan 7 — [`code/pertemuan-07/`](./code/pertemuan-07/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/buku.routes.ts`, `src/controller/buku.controller.ts`, `src/service/buku.service.ts`, dan `latihan.ts` — resource `buku` dengan pola lapis (TypeScript) |
+| 16 | [Pertemuan 8 — `pertemuan-08/08-Pertemuan-8.md`](./pertemuan-08/08-Pertemuan-8.md) | UTS — Mini Project Backend: ruang lingkup project, persiapan teknis, alur presentasi dan pengujian, kriteria kelayakan, studi kasus domain, kuis, dan rubrik UTS |
+| 17 | Kode referensi Pertemuan 8 — [`code/pertemuan-08/`](./code/pertemuan-08/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/buku.routes.ts`, `src/controller/buku.controller.ts`, `src/service/buku.service.ts`, `latihan.ts`, `README.md`, dan `.gitignore` — mini project referensi domain perpustakaan (TypeScript) |
 
 ## Referensi Terkait
 

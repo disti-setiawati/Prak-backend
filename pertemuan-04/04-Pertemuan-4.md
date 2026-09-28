@@ -231,7 +231,7 @@ Express menyediakan object request dan response dengan properti serta method yan
 | Status | `response.status()` | `response.status(201)` |
 | JSON body | `response.json()` | `response.json({ data })` |
 
-Response dapat dirangkai:
+Response dapat disusun:
 
 ```javascript
 return response.status(201).json({

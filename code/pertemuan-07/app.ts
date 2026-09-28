@@ -1,6 +1,6 @@
 /**
  * Pertemuan 7 — CRUD REST API: Aplikasi
- * Tujuan: merangkai seluruh lapisan (route → controller → service → Prisma)
+ * Tujuan: menyusun seluruh lapisan (route → controller → service → Prisma)
  *         dalam satu aplikasi Express yang siap dijalankan server.ts.
  *
  * Struktur lapisan (dari atas ke bawah):
@@ -64,7 +64,7 @@ app.get("/health", (_request: Request, response: Response) => {
   response.status(200).json({ success: true, message: "API berjalan", data: { status: "up" } });
 });
 
-// Seluruh endpoint resource buku dirangkai pada satu router.
+// Seluruh endpoint resource buku disusun pada satu router.
 // Dengan cara ini, bila path bergeser (mis. /api/buku), hanya baris ini
 // yang perlu diubah — route dan handler tidak terpengaruh.
 app.use("/buku", bukuRoutes);

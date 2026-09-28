@@ -73,7 +73,7 @@ penggunaRoutes.post("/", (_request: Request, response: Response) => {
 });
 
 // ------------------------------------------------------------------
-// APP — rangkai semuanya.
+// APP — susun semuanya.
 // ------------------------------------------------------------------
 
 const app = express();

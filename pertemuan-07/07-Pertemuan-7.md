@@ -8,7 +8,7 @@
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
 | **Stack** | Node.js 20+, Express.js 5, Prisma ORM 7, SQLite |
 
-> **Catatan penting:** Pada Pertemuan 6, seluruh operasi CRUD resource buku masih ditulis langsung di dalam handler endpoint — validasi, query Prisma, dan pembentukan response bercampur dalam satu file. Pertemuan ini merestrukturisasi melalui refactoring agar setiap lapisan memiliki tugas tunggal: **controller** menangani validasi input dan kode status, **service** memusatkan operasi data, **route** mengelompokkan endpoint, dan **app.ts** merangkai semuanya. Selain itu, validasi input diperkuat untuk menutup celah yang pada pertemuan sebelumnya masih terbuka, seperti body yang belum di-parse atau tipe data yang tidak diverifikasi.
+> **Catatan penting:** Pada Pertemuan 6, seluruh operasi CRUD resource buku masih ditulis langsung di dalam handler endpoint — validasi, query Prisma, dan pembentukan response bercampur dalam satu file. Pertemuan ini merestrukturisasi melalui refactoring agar setiap lapisan memiliki tugas tunggal: **controller** menangani validasi input dan kode status, **service** memusatkan operasi data, **route** mengelompokkan endpoint, dan **app.ts** menyusun semuanya. Selain itu, validasi input diperkuat untuk menutup celah yang pada pertemuan sebelumnya masih terbuka, seperti body yang belum di-parse atau tipe data yang tidak diverifikasi.
 
 ---
 
@@ -124,7 +124,7 @@ Pertemuan ini menjawab pertanyaan tersebut melalui pola service/controller dan p
 | **Route** | `src/routes/buku.routes.ts` | Mengelompokkan endpoint berdasarkan path resource | Memvalidasi input atau menyentuh Prisma |
 | **Controller** | `src/controller/buku.controller.ts` | Membaca `request`, memvalidasi input, memilih kode status, membentuk response | Menulis query database |
 | **Service** | `src/service/buku.service.ts` | Mengoperasikan Prisma Client sesuai input yang sudah teruji | Mengetahui kode status atau format response HTTP |
-| **App** | `app.ts` | Merangkai middleware, logger, route, handler 404, dan error handler | Menulis logika validasi atau operasi data |
+| **App** | `app.ts` | Menyusun middleware, logger, route, handler 404, dan error handler | Menulis logika validasi atau operasi data |
 
 Alasan memisahkan lapisan:
 
@@ -202,7 +202,7 @@ Struktur folder pada praktikum:
 
 ```text
 code/pertemuan-07/
-├── app.ts                    # merangkai semua lapisan
+├── app.ts                    # menyusun semua lapisan
 ├── server.ts                 # menjalankan app + shutdown
 ├── client.ts                 # instance Prisma Client (diwarisi dari P6)
 ├── prisma/
@@ -522,7 +522,7 @@ Pada Pertemuan 8, Anda akan mengevaluasi mini project backend secara menyeluruh 
 
 ## Lampiran: Kode Praktikum
 
-- [`code/pertemuan-07/app.ts`](../code/pertemuan-07/app.ts) — merangkai middleware, logger, route, handler 404, dan error handler.
+- [`code/pertemuan-07/app.ts`](../code/pertemuan-07/app.ts) — menyusun middleware, logger, route, handler 404, dan error handler.
 - [`code/pertemuan-07/server.ts`](../code/pertemuan-07/server.ts) — proses menjalankan server dan shutdown bersih.
 - [`code/pertemuan-07/client.ts`](../code/pertemuan-07/client.ts) — instance Prisma Client tunggal.
 - [`code/pertemuan-07/prisma/schema.prisma`](../code/pertemuan-07/prisma/schema.prisma) — skema SQLite dengan model `buku` dan `pengguna`.
