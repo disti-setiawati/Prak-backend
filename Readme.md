@@ -26,6 +26,12 @@
 | 15 | Kode praktikum Pertemuan 7 — [`code/pertemuan-07/`](./code/pertemuan-07/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/buku.routes.ts`, `src/controller/buku.controller.ts`, `src/service/buku.service.ts`, dan `latihan.ts` — resource `buku` dengan pola lapis (TypeScript) |
 | 16 | [Pertemuan 8 — `pertemuan-08/08-Pertemuan-8.md`](./pertemuan-08/08-Pertemuan-8.md) | UTS — Mini Project Backend: ruang lingkup project, persiapan teknis, alur presentasi dan pengujian, kriteria kelayakan, studi kasus domain, kuis, dan rubrik UTS |
 | 17 | Kode referensi Pertemuan 8 — [`code/pertemuan-08/`](./code/pertemuan-08/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/buku.routes.ts`, `src/controller/buku.controller.ts`, `src/service/buku.service.ts`, `latihan.ts`, `README.md`, dan `.gitignore` — mini project referensi domain perpustakaan (TypeScript) |
+| 18 | [Pertemuan 9 — `pertemuan-09/09-Pertemuan-9.md`](./pertemuan-09/09-Pertemuan-9.md) | Authentication — identity, register/login, password hashing dengan `scrypt`, perbandingan session dan token, CBL, kuis, dan tugas |
+| 19 | Kode praktikum Pertemuan 9 — [`code/pertemuan-09/`](./code/pertemuan-09/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/auth.routes.ts`, `src/controller/auth.controller.ts`, `src/service/auth.service.ts`, dan Prisma schema — API register/login dengan Express.js, SQLite, dan password hashing |
+| 20 | [Pertemuan 10 — `pertemuan-10/10-Pertemuan-10.md`](pertemuan-10/10-Pertemuan-10.md) | JWT dan Authorization — struktur JWT, access token, header `Authorization`, middleware authentication, role-based authorization, CBL, kuis, dan tugas |
+| 21 | Kode praktikum Pertemuan 10 — [`code/pertemuan-10/`](./code/pertemuan-10/) | `app.ts`, `server.ts`, `client.ts`, `src/service/token.service.ts`, `src/middleware/auth.middleware.ts`, route/controller auth dan protected, serta Prisma schema — protected API dengan role-based authorization |
+| 22 | [Pertemuan 11 — `pertemuan-11/11-Pertemuan-11.md`](pertemuan-11/11-Pertemuan-11.md) | Keamanan Backend dan API — input validation, SQL injection dan query terparameterisasi, security header, CORS, rate limiting, secret management, security checklist, kuis, dan tugas |
+| 23 | Kode praktikum Pertemuan 11 — [`code/pertemuan-11/`](./code/pertemuan-11/) | `app.ts`, `server.ts`, `client.ts`, `src/middleware/security.middleware.ts`, `src/middleware/validation.middleware.ts`, route/controller/service buku, dan README — API dengan lapisan keamanan |
 
 ## Referensi Terkait
 
@@ -87,6 +93,15 @@
 - [Express.js — Using middleware](https://expressjs.com/en/guide/using-middleware.html) — urutan pendaftaran middleware, error handler, dan 404
 - [MDN — HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) — pilihan status `201`, `404`, `204`, `400`, dan `500`
 - [Node.js — Error handling](https://nodejs.org/api/errors.html) — praktik error handling dan cara mengirim error antar lapisan
+
+### 09-Pertemuan-9.md — Authentication
+
+- [Node.js — Crypto](https://nodejs.org/api/crypto.html) — `scrypt`, salt, dan perbandingan nilai hash dengan waktu konstan
+- [OWASP — Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) — algoritma password hashing, salt, dan parameter biaya
+- [Express.js — Routing](https://expressjs.com/en/guide/routing.html) — pemetaan endpoint register dan login
+- [Prisma — Database constraints](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-a-unique-field) — unique constraint untuk identitas akun
+- [OWASP — Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html) — pengelolaan session dan cookie
+- [OWASP — JSON Web Token Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html) — risiko dan praktik penggunaan JWT
 
 ### Timeline.md — Materi 16 Pertemuan
 

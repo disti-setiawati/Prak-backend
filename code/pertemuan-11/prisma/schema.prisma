@@ -1,0 +1,20 @@
+generator client {
+  provider            = "prisma-client"
+  output              = "./generated"
+  importFileExtension = "ts"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+/// Model buku dipakai untuk mendemonstrasikan validation dan query yang aman terhadap injection.
+model Buku {
+  id        Int      @id @default(autoincrement())
+  judul     String
+  penulis   String
+  stok      Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@map("buku")
+}
